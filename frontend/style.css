@@ -1,1 +1,73 @@
-/* style still to be implemented */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #eceff1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 90%;
+    max-width: 360px;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+input[type="number"] {
+    width: calc(100% - 24px); 
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #90a4ae;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #00796b; 
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #00796b;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #004d40; 
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #37474f;
+}
