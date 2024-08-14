@@ -1,8 +1,8 @@
-# Simple Web Application with Backend Service
+# Special Calculator
 
 ## Project Assignment
 
-This project was assigned as part of a technical task by [Cents](https://www.centsdonations.com/). This task involved building a simple web application that interacts with a backend service to perform a specific arithmetic operation and demonstrate proficiency in web development, integration, and design practices.
+This project was assigned as part of a technical task by [Cents](https://www.centsdonations.com/). This task involved building a simple web application that interacts with a backend service to perform a specific arithmetic operation.
 
 
 ## Description
