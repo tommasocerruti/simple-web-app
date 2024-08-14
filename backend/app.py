@@ -1,7 +1,11 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from sympy import nextprime
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../frontend')
+
+@app.route('/')
+def index():
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/calculate', methods=['POST'])
 def calculate():
@@ -14,7 +18,7 @@ def calculate():
 
     except Exception as e:
         return jsonify({'error': str(e)}), 400
-    
+
 def operation(num1, num2):
     total_sum = num1 + num2
     max_num = max(num1, num2)
