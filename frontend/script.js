@@ -3,7 +3,7 @@ function calculate() {
     const num2 = parseInt(document.getElementById('num2').value);
 
     if (isNaN(num1) || isNaN(num2)) {
-        alert('Please enter non null valid numbers');
+        alert('Please enter non-null valid numbers');
         return;
     }
 
@@ -26,3 +26,12 @@ function calculate() {
         console.error('Error:', error);
     });
 }
+
+document.getElementById('info-icon').addEventListener('click', function() {
+    const infoBox = document.getElementById('info-box');
+    if (infoBox.style.display === 'none' || !infoBox.style.display) {
+        infoBox.style.display = 'block';
+    } else {
+        infoBox.style.display = 'none';
+    }
+});

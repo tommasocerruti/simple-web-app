@@ -8,7 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Special Calculator</h1>
+        <h1>Special Calculator
+            <span id="info-icon" class="info-icon">ℹ️</span>
+        </h1>
+        <div class="info-box" id="info-box">
+            This calculator computes the sum of two numbers provided by the user and adds the first prime number greater than the larger of the two numbers.
+        </div>
         <input type="number" id="num1" placeholder="Enter here the first number" />
         <input type="number" id="num2" placeholder="Enter here the second number" />
         <button onclick="calculate()">Calculate</button>
